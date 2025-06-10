@@ -31,8 +31,11 @@ https://support.facilitynet.dk/hc/da/articles/360052966691-How-to-setup-Chrome-K
 <br>
 
 Add --kiosk “http://ur.com” --disable-context-menu --disable-pinch
+<br>
+Restart the computer if it doesn't take effect.
 
 ![My Image](Github_Images/Kiosk_Mode/6.png)
+
 
 
 
