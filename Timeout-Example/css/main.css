@@ -1,0 +1,515 @@
+/*==============================================
+Hidden Reset Button 
+==============================================*/
+#hidden-reset {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: none;
+}
+
+
+/*==============================================
+Modal 
+==============================================*/
+#timerWrapper {
+    position: fixed;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height: 390px;
+    width: 450px;
+    border-radius: 25px;
+    background: #ffffff;
+    z-index: 10;
+    display: none;
+    opacity: .9;
+    transition: all ease 1s;
+}
+
+#eyesImage {
+    height: 50px;
+    width: 50px;
+    margin: 20px auto 0 auto;
+    display: table;
+  }
+
+#headerCopy {
+    margin: 10px auto 0 auto;
+    display: table;
+    font-size: 35px;
+    font-family: 'Poppins-Bold', sans-serif;
+    color: #3B3B3B;
+    z-index: 11;
+}
+
+#timer {
+    position: fixed;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: none;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    font-family: 'Poppins-Regular', sans-serif;
+    color: #3B3B3B;
+    font-size: 110px;
+    z-index: 11;
+}
+
+#continue {
+    position: absolute;
+    width: 150px;
+    color: #fff;
+    background-color: #00A8E8;
+    border: none;
+    display: none;
+    font-size: 20px;
+    font-weight: 400; 
+    font-family: 'Poppins-Regular', sans-serif;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    left: 200px;
+    right: 0;
+    bottom: 2%;
+    border-radius: 25px;
+    z-index: 11;
+}
+
+#restart {
+    position: absolute;
+    width: 150px;
+    color: #fff;
+    background: #FF6B6B;
+    border: none;
+    display: none;
+    font-size: 20px;
+    font-weight: 400; 
+    font-family: 'Poppins-Regular', sans-serif;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    right: 200px;
+    left: 0;
+    bottom: 2%;
+    border-radius: 25px;
+    z-index: 11;
+  }
+
+#modalBackground {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fadeInModal {
+    animation: fadeInModal993451 1s;
+    -webkit-animation: fadeInModal993451 1s;
+    -moz-animation: fadeInModal993451 1s;
+    -o-animation: fadeInModal993451 1s;
+    -ms-animation: fadeInModal993451 1s;
+}
+
+
+#hidden-reset {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*==============================================
+Animation
+==============================================*/
+@keyframes fadeInModal {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInModal {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInModal {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInModal {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeInModal {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+
+/*==============================================
+Fonts for popup.html
+==============================================*/
+/* @font-face {
+  font-family: 'Poppins-Black';
+  src:  url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Black.tff') format('tff'),
+        url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src:  url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Bold.tff') format('tff'),
+        url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src:  url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Regular.ttf') format('tff'),
+        url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src:  url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Light.ttf') format('tff'),
+          url('chrome-extension://__MSG_@@extension_id__/fonts/Poppins-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins-Regular', Sans-Serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* div#timerWrapper93451.fadeInModal993451 {
+    zoom: 3;
+} */
+
+
+/* Sizing for 4k monitors */
+/* div#timerWrapper93451 {
+    zoom: 3;
+} */
+
+/*==============================================
+Popup html styles
+==============================================*/
+/* #popUpContainer {
+    height: auto;
+    width: 450px;
+    margin: 0 auto;
+    background-color: #3B3B3B;
+    max-height: 800px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#extensionName {
+    color: #00A8E8;
+    font-family: 'Poppins-Black', Sans-Serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: table;
+}
+
+#saveRootContainer {
+    margin: 0 auto;
+    display: table;
+}
+
+#userInputField {
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    background-color: #6D6D6D !important;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 5px;
+    width: 265px;
+}
+
+#inputStatus  {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: 'Poppins-Bold', Sans-Serif;
+    color: #ffffff;
+}
+
+#homepage {
+    font-family: 'Poppins-Light', Sans-Serif;
+    color: #ffffff;
+    overflow-wrap: anywhere;
+    max-width: 285px;
+    margin-top: 0;
+}
+
+#storedHomepage { color: #FFB400; }
+
+#hiddenDisableContainer, #saveRootContainer {
+    padding: 15px 30px;
+
+} */
+/*==============================================
+Home page dont run
+==============================================*/
+/* #modalButtonsBackground {
+    background-color: #505050;
+    padding: 15px 30px;
+}
+
+#homepageExclusionContainer {
+    display: table;
+    margin: 0 auto;
+    color: #ffffff;
+}
+#homepageExclusionContainer  label {
+    vertical-align: super;
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    font-size: 12px;
+}
+
+#homepageExclusionContainer h3 {
+    font-family: 'Poppins-Light', Sans-Serif;
+}
+
+#disableOnHomepage {
+    zoom: 2;
+}
+
+#homepageUrlField {
+    margin-bottom: 10px;
+}
+
+#homepageDisplay {
+    font-family: 'Poppins-Light', Sans-Serif;
+    margin: 0;
+}
+
+#homepageUrlField {
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    background-color: #6D6D6D !important;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 5px;
+    width: 265px;
+}
+
+#storedHomepageUrl { color: #FFB400; } */
+
+
+
+/*============  Buttons  ==============*/
+
+/* #homepageExclusionContainerBackground {
+    background-color: #505050;
+    padding: 15px 30px;
+}
+
+::placeholder {
+    color:#ffffff;
+    font-family: 'Poppins-Light', Sans-Serif;
+    opacity: .4; 
+  }
+
+#saveButton, #removeButton, #saveHomepageButton, #removeHomepageButton {
+    width: 72px;
+    height: 25px;
+}
+
+#saveButton, #removeButton, #toggleVisibility, #saveHomepageButton, #removeHomepageButton {
+    padding: 5px 10px;
+    margin: 5px 15px 5px 0;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'Poppins-Regular', Sans-Serif;
+}
+
+#toggleVisibility {
+    background-color: #00A8E8;
+    color: #3B3B3B;
+}
+
+#saveButton, #saveHomepageButton {
+    background-color: #00A8E8;
+    color: #3B3B3B;
+    margin-top: 10px;
+}
+
+#removeButton, #removeHomepageButton {
+    background-color: #FF6B6B;
+    color: #3B3B3B;
+    margin-top: 10px;
+} */
+
+/*============  Hidden reset button  ==============*/
+/* #hiddenDisableContainer {
+    margin: 0 auto;
+    display: table;
+}
+
+#hiddenResetButtonPostitioning { margin-top: 15px; }
+#buttonContainer { margin: 3px 0 15px 0; } */
+
+/*============  Disable timer  ==============*/
+/* #disableTImeout {
+    zoom: 2;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#disableTimeoutLabel {
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    font-size: 12px;
+} */
+
+/*============  Timeout duration  ==============*/
+/* #timeoutDurationContainer {
+    margin: 5px auto 25px auto;
+    display: table;
+}
+
+#timeoutDurationContainer label {
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+#timeoutValue {
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+}
+
+#timeoutDuration { accent-color: #00A8E8; } */
+
+/*============  Button color pickers  ==============*/
+/* #modalHeader {
+    color: #00A8E8;
+    font-family: 'Poppins-Bold', Sans-Serif;
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#modalButtons label {
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    margin-left: 10px;
+    vertical-align: super;
+    font-size: 12px;
+}
+
+#modalButtons ul {
+    margin: 0 auto;
+    display: table;
+}
+
+.colorPickers {
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#continueButtonBgColor { margin-left: 20px; }
+#continueButtonTextColor { margin-left: 33px; }
+#restartButtonBgColor { margin-left: 33px; }
+#restartButtonTextColor { margin-left: 46px; }
+
+#saveButtonStyling {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'Poppins-Regular', Sans-Serif;
+    background-color: #00A8E8;
+} */
+
+/*============  Corner radius styling  ==============*/
+/* #cornerRadiusContainer {
+    margin: 30px auto 0 auto;
+    display: table;
+}
+
+#cornerRadiusContainer h3 {
+    color: #00A8E8;
+    margin-bottom: 10px;
+}
+
+#cornerRadiusContainer label {
+    color: #ffffff;
+    margin-left: 20px;
+    vertical-align: bottom;
+    font-family: 'Poppins-Regular', Sans-Serif;
+}
+
+#cornerRadius { accent-color: #00A8E8; }
+
+#radiusDisplay {
+    margin-left: 10px;
+    color: #ffffff;
+    position: relative;
+     font-family: 'Poppins-Light', Sans-Serif;
+    font-size: 12px;
+}  */
+
+
+
