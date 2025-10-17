@@ -1,6 +1,8 @@
 # Timeout Function
 
-Always have a timeout function. Typically, 60 secs to trigger and 10 secs to reset. Here is a [Figma](https://www.figma.com/design/d4PdgcZelUQyn27mfgHHEm/Simple-slider-timeout-design?node-id=0-1&t=rllvg4vUTs6zNBJg-1)
+Always have a timeout function. Typically, 60 secs to trigger and 10 secs to reset. Here is a [Figma](https://www.figma.com/design/d4PdgcZelUQyn27mfgHHEm/Simple-slider-timeout-design?node-id=0-1&t=rllvg4vUTs6zNBJg-1). 
+
+There is also some example code in this repo.
 <br>
 
 # Hidden Reset Button
