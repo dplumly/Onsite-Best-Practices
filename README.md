@@ -22,13 +22,16 @@ If your experience uses a Barcode/QR code scanner make sure to have an override 
 Capture analytics. Make sure your timeout ends the session if the experience resets.
 <br>
 
-# Salesforce Activation Layer
-Best practices for utilizing.
+# Chrome Efficientcy Mode
 
-- proper request timeout
-- proper error handling
-- Any place that uses data from the activation layer, i.e. "Hello Bob," make sure there's placeholder alt for the copy
-- Queue system and ability to run a function to have it re-fetch all missing data.
+Some rental machines (looking at you MVS) have a Chrom flag that can impact your monitors/preformance. 
+
+- Open task manager
+- Look at Chrome in the processes tab
+- There will be a green leaf, on that tab right click and turn it off
+
+![My Image](Github_Images/chrome-efficiency/chrome-efficiency.jpg)
+
 
 # Kiosk Mode Guide
 
@@ -69,4 +72,10 @@ After added, close and open the browser. If you have an instance open it will no
 ![My Image](Github_Images/Kiosk_Mode/6.png)
 
 
+# Salesforce Activation Layer
+Best practices for utilizing.
 
+- proper request timeout
+- proper error handling
+- Any place that uses data from the activation layer, i.e. "Hello Bob," make sure there's placeholder alt for the copy
+- Queue system and ability to run a function to have it re-fetch all missing data.
